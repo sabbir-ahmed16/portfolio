@@ -1,0 +1,545 @@
+body {
+  font-size: 14px;
+  color: #333333;
+  background-color: #ffffff;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.slides-navigation {
+  z-index: 6;
+}
+.slides-navigation .prev,
+.slides-navigation .next {
+  width: 47px;
+  height: 47px;
+  z-index: 10;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+  left: 20px;
+  background-image: url(../img/icons/prev.png);
+}
+
+.slides-navigation a.next {
+  right: 20px;
+  background-image: url(../img/icons/next.png);
+}
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  margin-top: -125px;
+}
+.titleMessage .heading p {
+  color: #ffffff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+  letter-spacing: 7px;
+}
+.titleMessage .heading .main {
+  font-size: 50px;
+}
+.titleMessage .heading .sub {
+  font-size: 23px;
+}
+/*----Removes Underline from navbar option *Never change this-*/
+/* .nav-item.active::after {
+  display: none;
+} */
+.section {
+  padding: 100px 0;
+}
+#about .col-md-5 img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#about .col-md-5 img:hover {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+#about h2 {
+  font-family: "Nixie One";
+  color: #908f9e;
+}
+
+#about .container .row .col-md-7 p{
+  font-family: "Nixie One";
+  font-size: 20px;
+  color: #908f9e;
+  text-align: justify;
+}
+.aboutImage {
+  max-width: 100%;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+/*-------------------Educational Qualification--------------------*/
+#educational-qualification h2 {
+  color: #130f40;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+#educational-qualification ul {
+  margin-left: -40px;
+}
+#educational-qualification ul li{
+  padding-top: 1.5%;
+  list-style-type: none;
+  border: 1px solid rgba(63, 61, 61, 0.1);
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+#educational-qualification ul li:hover {
+  box-shadow: 5px 5px 5px #908f9e;
+  transition: 0.5s ease-in-out;
+}
+/*-----------------------Skills Section-------------------------*/
+.skillsSection,
+.contactSection {
+  background-color: #130f40;
+  color: #ffffff;
+}
+.skill {
+  text-align: center;
+  margin-left: 10px;
+}
+.chart {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.chart .percent {
+  color: #ffffff;
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
+}
+.chart .percent:after {
+  content: "%";
+}
+.skillsSection .container .row .col-md-12 p{
+  color: #ffd32a;
+}
+
+.skill p {
+  color: rgba(240, 235, 235, 0.9);
+}
+
+/*--------------------------Stats Section-------------------------*/
+.squareItem {
+  margin-top: 30px;
+  position: relative;
+}
+.squareInnerContainer {
+  position: relative;
+  padding: 50px 15px 35px;
+  text-align: center;
+  border: 2px solid #444444;
+  border-top: none;
+}
+.squareInnerContainer::before,
+.squareInnerContainer::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 30%;
+  border-bottom: 2px solid #444444;
+}
+.squareInnerContainer::before {
+  right: 0px;
+}
+.squareInnerContainer::after {
+  left: 0px;
+}
+.squareContent h2 {
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #130f40;
+}
+
+.squareContent h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+.squareIcon {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  width: 40%;
+  height: 60px;
+  font-size: 45px;
+  margin-left: -20%;
+  color: #130f40;
+}
+.contactButton {
+  color: #ffd32a;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 2px solid #ffd32a;
+  border-radius: 5px;
+}
+.contactButton:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*----------Certification-------------*/
+.certificationSection h2 {
+  color: #130f40;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+/* .certificationSection hr {
+  width: 35%;
+  margin: auto;
+  border: 3px solid #ffd32a;
+  margin-bottom: 15px;
+  border-radius: 50%;
+} */
+.cert-owl-carousel .cert-owl-item img {
+  width: 60%;
+  margin: auto;
+  vertical-align: middle;
+}
+.cert-owl-carousel .cert-owl-item h5 {
+  font-family: 'Days One';
+  text-align: center;
+  margin-top: 10px;
+}
+.cert-owl-carousel .cert-owl-item p {
+  text-align: center;
+}
+.cert-owl-carousel {
+  margin-bottom: 5%;
+}
+/*--Removes underline from active certificate indicator---Never change this--*/
+
+.cert-owl-item.active::after {
+  display: none;
+}
+.cert-owl-dot.active:after {
+  display: none;
+}
+/*
+.cert-owl-item.active {
+  background-color: #ffffff;
+}*/
+
+/*-------------------Project Section------------*/
+.section .heading {
+  margin-bottom: 30px;
+  width: 100%;
+  margin: auto;
+}
+#project marquee {
+  font-size: 30px;
+  margin-top: 50px;
+}
+/* .section .heading hr {
+  border-radius: 50%;
+  margin: auto;
+} */
+
+.filter {
+  text-align: center;
+  width: 100%;
+}
+.filter ul {
+  margin-left: -30px;
+  margin-top: 10px;
+}
+.filter a {
+  color: #ffd32a;
+  border: 1px solid #ffd32a;
+  background-color: #130f40;
+  padding: 10px 18px;
+  display: block;
+  border-radius: 5px;
+}
+
+.filter li {
+  display: inline-block;
+  padding: 5px;
+}
+.filter ul li a {
+  border: 2px solid;
+  box-shadow: 5px 2px 8px #908f9e;
+}
+.filter ul li a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.filter .current {
+  background-color: #ffd32a;
+  color: #130f40;
+  border-color: #130f40;
+}
+.itemsContainer {
+  width: 100%;
+}
+.items li {
+  display: inline-block;
+  padding: 5px;
+}
+.items li img {
+  width: 100%;
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  -transition: all 0.2s linear, 1s;
+}
+
+.items .item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.items .icons {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin: -20px auto 0 -47px;
+  text-align: center;
+  z-index: 3;
+}
+.items .icons i {
+  color: #ffd32a;
+  font-size: 20px;
+  margin-top: 9px;
+}
+.items a {
+  width: 40px;
+  height: 40px;
+  background-color: #130f40;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.2s linear, 0.3s;
+  -moz-transition: all 0.2s linear, 0.3s;
+  -o-transition: all 0.2s linear, 0.3s;
+  -ms-transition: all 0.2s linear, 0.3s;
+  -transition: all 0.2s linear, 0.3s;
+}
+.items .imageOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  -transition: all 0.2s linear, 1s;
+}
+.items .item:hover .imageOverlay {
+  opacity: 1;
+}
+.items .openButton {
+  float: left;
+  left: -400px;
+}
+.items .projectLink {
+  float: right;
+  right: -400px;
+}
+.items .item:hover .openButton {
+  left: 0px;
+}
+.items .item:hover .projectLink {
+  right: 0px;
+}
+.items .item:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -transform: scale(1.05, 1.05);
+}
+.items {
+  padding: 0;
+}
+
+/*---------------Project Section Ends-------*/
+
+/*----------------Publications---------------*/
+#publication h2{
+  margin-bottom: -25px;
+}
+.accordion {
+  background-color: #ffffff;
+  color: #130f40;
+  cursor: pointer;
+  padding: 18px 36px;
+  width: 100%;
+  border: 1px solid rgba(63, 61, 61, 0.1);
+  margin: 1px;
+  margin-top: -30px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Days One';
+  transition: 0.4s;
+}
+.accordion:focus {
+  outline: none;
+}
+.accordion:hover {
+  box-shadow: 15px 2px 15px 0.5px gray;
+}
+
+.accordion:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.expanded:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p {
+  font-family: sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+/*----------------Publications---------------*/
+
+/*---------------Navigation Section------------*/
+#navigation {
+  background-color: #130f40;
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+}
+#navigation li {
+  padding: 0 10px;
+}
+#navigation li a {
+  color: #ffffff;
+}
+#navigation li a:hover {
+  color: #ffd32a;
+}
+.navbar-brand {
+  color: #ffd32a;
+  font-family: 'Days One';
+}
+.navbar-brand:hover {
+  color: #ffd32a;
+}
+#navigation button:focus {
+  outline: none;
+}
+.navbar-toggler-icon {
+  background: url(../img/icons/menu.png);
+  background-size: 100%;
+  color: #ffd32a;
+}
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+.nav-item.active {
+  background: #130f40;
+}
+
+/*-----------------Footer Section----------*/
+.footerSection {
+  background-color: #130f40;
+  margin-bottom: -100px;
+}
+.footerSection h5 {
+  color: #ffd32a;
+}
+.footerSection hr {
+  color: #ffd32a;
+  border: 1px solid #ffd32a;
+  border-radius: 100%;
+}
+.contactIcon a{
+  font-size: 25px;
+  color: #ffd32a;
+}
+.footerSection p {
+  margin-top: 1%;
+  font-family: verdana;
+  color: #ffd32a;
+}
+/*---------------Footer Section Ends-----------/
+
+/*---------------------Loader-----------------*/
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+.loader .inner {
+  width: 100%;
+  height: 100%;
+  background: url(../img/preloader/loader2.gif) center center no-repeat;
+}
+
+/*----------------Media Query--------------------*/
+@media (max-width: 1200px) {
+  .cert-owl-carousel .cert-owl-item img {
+    width: 87%;
+    margin: auto;
+    vertical-align: middle;
+  }
+  .cert-owl-carousel .cert-owl-item h5 {
+    font-size: 14px;
+    font-family: 'Days One';
+    text-align: center;
+    margin-top: 10px;
+  }
+  .cert-owl-carousel .cert-owl-item p {
+    font-size: 10px;
+    text-align: center;
+  }
+}
