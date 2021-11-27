@@ -66,7 +66,7 @@ body {
   filter: grayscale(100%);
 }
 #about .col-md-5 img:hover {
-  transition: filter .5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
@@ -75,7 +75,7 @@ body {
   color: #908f9e;
 }
 
-#about .container .row .col-md-7 p{
+#about .container .row .col-md-7 p {
   font-family: "Nixie One";
   font-size: 20px;
   color: #908f9e;
@@ -83,8 +83,13 @@ body {
 }
 .aboutImage {
   max-width: 100%;
-  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2),
+    0 6px 20px 5px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
+}
+
+.highlight {
+  font-weight: bold;
 }
 
 /*-------------------Educational Qualification--------------------*/
@@ -97,7 +102,7 @@ body {
 #educational-qualification ul {
   margin-left: -40px;
 }
-#educational-qualification ul li{
+#educational-qualification ul li {
   padding-top: 1.5%;
   list-style-type: none;
   border: 1px solid rgba(63, 61, 61, 0.1);
@@ -139,7 +144,7 @@ body {
 .chart .percent:after {
   content: "%";
 }
-.skillsSection .container .row .col-md-12 p{
+.skillsSection .container .row .col-md-12 p {
   color: #ffd32a;
 }
 
@@ -229,7 +234,7 @@ body {
   vertical-align: middle;
 }
 .cert-owl-carousel .cert-owl-item h5 {
-  font-family: 'Days One';
+  font-family: "Days One";
   text-align: center;
   margin-top: 10px;
 }
@@ -395,7 +400,7 @@ body {
 /*---------------Project Section Ends-------*/
 
 /*----------------Publications---------------*/
-#publication h2{
+#publication h2 {
   margin-bottom: -25px;
 }
 .accordion {
@@ -410,7 +415,7 @@ body {
   text-align: left;
   outline: none;
   font-size: 15px;
-  font-family: 'Days One';
+  font-family: "Days One";
   transition: 0.4s;
 }
 .accordion:focus {
@@ -421,7 +426,7 @@ body {
 }
 
 .accordion:after {
-  content: '\002B';
+  content: "\002B";
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -464,7 +469,7 @@ body {
 }
 .navbar-brand {
   color: #ffd32a;
-  font-family: 'Days One';
+  font-family: "Days One";
 }
 .navbar-brand:hover {
   color: #ffd32a;
@@ -498,7 +503,7 @@ body {
   border: 1px solid #ffd32a;
   border-radius: 100%;
 }
-.contactIcon a{
+.contactIcon a {
   font-size: 25px;
   color: #ffd32a;
 }
@@ -534,7 +539,7 @@ body {
   }
   .cert-owl-carousel .cert-owl-item h5 {
     font-size: 14px;
-    font-family: 'Days One';
+    font-family: "Days One";
     text-align: center;
     margin-top: 10px;
   }
