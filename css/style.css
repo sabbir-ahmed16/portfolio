@@ -5,6 +5,71 @@ body {
   letter-spacing: 1px;
   overflow-x: hidden;
 }
+
+:root {
+  --main-color: #130f40;
+  --secondary-color: #ffd32a;
+}
+
+/* COLOR SWATCH */
+.color-switcher {
+  position: fixed;
+  top: 10px;
+  right: -200px;
+  width: 200px;
+  padding: 10px;
+  background: rgba(100, 100, 100, 0.6);
+  z-index: 1000;
+}
+
+.color-switcher.active {
+  right: 0;
+}
+
+.color-switcher h6 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  border-bottom: 1px solid #130f40;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.color-switcher .switcher-btn {
+  position: absolute;
+  top: 0;
+  left: -66px;
+  background: rgba(100, 100, 100, 0.6);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.color-switcher .switcher-btn i {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.color-switcher .theme-btns-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-switcher .theme-btns-container .theme-btns {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+/*----------------------------------------*/
 .overlay {
   width: 100%;
   height: 100%;
@@ -95,7 +160,7 @@ body {
 
 /*-------------------Educational Qualification--------------------*/
 #educational-qualification h2 {
-  color: #130f40;
+  color: var(--main-color);
   font-weight: 700;
   font-size: 45px;
   margin-bottom: 30px;
@@ -117,7 +182,7 @@ body {
 /*-----------------------Skills Section-------------------------*/
 .skillsSection,
 .contactSection {
-  background-color: #130f40;
+  background-color: var(--main-color);
   color: #ffffff;
 }
 .skill {
@@ -146,7 +211,7 @@ body {
   content: "%";
 }
 .skillsSection .container .row .col-md-12 p {
-  color: #ffd32a;
+  color: var(--secondary-color);
 }
 
 .skill p {
@@ -183,7 +248,7 @@ body {
   font-size: 56px;
   margin-bottom: 10px;
   font-weight: 400;
-  color: #130f40;
+  color: var(--main-color);
 }
 
 .squareContent h3 {
@@ -199,14 +264,14 @@ body {
   height: 60px;
   font-size: 45px;
   margin-left: -20%;
-  color: #130f40;
+  color: var(--main-color);
 }
 .contactButton {
-  color: #ffd32a;
+  color: var(--secondary-color);
   padding: 15px 20px;
   display: inline-block;
   margin-top: 20px;
-  border: 2px solid #ffd32a;
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
 }
 .contactButton:hover {
@@ -216,7 +281,7 @@ body {
 
 /*----------Certification-------------*/
 .certificationSection h2 {
-  color: #130f40;
+  color: var(--main-color);
   font-weight: 700;
   font-size: 45px;
   margin-bottom: 30px;
@@ -282,9 +347,9 @@ body {
   margin-top: 10px;
 }
 .filter a {
-  color: #ffd32a;
-  border: 1px solid #ffd32a;
-  background-color: #130f40;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: var(--main-color);
   padding: 10px 18px;
   display: block;
   border-radius: 5px;
@@ -304,9 +369,9 @@ body {
   border-color: #ffffff;
 }
 .filter .current {
-  background-color: #ffd32a;
-  color: #130f40;
-  border-color: #130f40;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border-color: var(--main-color);
 }
 .itemsContainer {
   width: 100%;
@@ -340,14 +405,14 @@ body {
   z-index: 3;
 }
 .items .icons i {
-  color: #ffd32a;
+  color: var(--secondary-color);
   font-size: 20px;
   margin-top: 9px;
 }
 .items a {
   width: 40px;
   height: 40px;
-  background-color: #130f40;
+  background-color: var(--main-color);
   position: relative;
   display: inline-block;
   -webkit-transition: all 0.2s linear, 0.3s;
@@ -406,7 +471,7 @@ body {
 }
 .accordion {
   background-color: #ffffff;
-  color: #130f40;
+  color: var(--main-color);
   cursor: pointer;
   padding: 18px 36px;
   width: 100%;
@@ -454,7 +519,7 @@ body {
 
 /*---------------Navigation Section------------*/
 #navigation {
-  background-color: #130f40;
+  background-color: var(--main-color);
   padding: 20px 10px;
   z-index: 100;
   width: 100%;
@@ -466,14 +531,14 @@ body {
   color: #ffffff;
 }
 #navigation li a:hover {
-  color: #ffd32a;
+  color: var(--secondary-color);
 }
 .navbar-brand {
-  color: #ffd32a;
+  color: var(--secondary-color);
   font-family: "Days One";
 }
 .navbar-brand:hover {
-  color: #ffd32a;
+  color: var(--secondary-color);
 }
 #navigation button:focus {
   outline: none;
@@ -481,37 +546,37 @@ body {
 .navbar-toggler-icon {
   background: url(../img/icons/menu.png);
   background-size: 100%;
-  color: #ffd32a;
+  color: var(--secondary-color);
 }
 .fixedNav #navigation {
   position: fixed;
   top: 0;
 }
 .nav-item.active {
-  background: #130f40;
+  background: var(--main-color);
 }
 
 /*-----------------Footer Section----------*/
 .footerSection {
-  background-color: #130f40;
+  background-color: var(--main-color);
   margin-bottom: -100px;
 }
 .footerSection h5 {
-  color: #ffd32a;
+  color: var(--secondary-color);
 }
 .footerSection hr {
-  color: #ffd32a;
-  border: 1px solid #ffd32a;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 100%;
 }
 .contactIcon a {
   font-size: 25px;
-  color: #ffd32a;
+  color: var(--secondary-color);
 }
 .footerSection p {
   margin-top: 1%;
   font-family: verdana;
-  color: #ffd32a;
+  color: var(--secondary-color);
 }
 /*---------------Footer Section Ends-----------/
 

@@ -38,6 +38,20 @@
   <div class="loader">
     <div class="inner"></div>
   </div>
+
+  <!------------------------------Color Swatches-------------------------------------->
+  <div class="color-switcher">
+    <div class="switcher-btn">
+      <i class="fas fa-cog"></i>
+    </div>
+    <h6>select color</h6>
+    <div class="theme-btns-container">
+      <span class="theme-btns" data-color="#000000" style="background: #000000;"></span>
+      <span class="theme-btns" data-color="#093d09" style="background: #093d09;"></span>
+      <span class="theme-btns" data-color="#590303" style="background: #590303;"></span>
+    </div>
+  </div>
+
   <!-------------------------------Superslides & Title Message------------------------>
   <div id="slides">
     <div class="overlay"></div>
@@ -618,6 +632,20 @@
         responsiveClass: true,
         smartSpeed: 1000,
       });
+
+    /* Color Swatch */
+    document.querySelector('.switcher-btn').onclick = () => {
+      document.querySelector('.color-switcher').classList.toggle('active');
+    };
+
+    let themeButtons = document.querySelectorAll('.theme-btns');
+
+    themeButtons.forEach(color => {
+      color.addEventListener('click', () => {
+        let dataColor = color.getAttribute('data-color');
+        document.querySelector(':root').style.setProperty('--main-color', dataColor);
+    });
+  });
     </script>
 </body>
 
