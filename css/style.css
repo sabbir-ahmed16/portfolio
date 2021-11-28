@@ -14,10 +14,10 @@ body {
 /* COLOR SWATCH */
 .color-switcher {
   position: fixed;
-  top: 10px;
-  right: -200px;
+  top: -14px;
+  right: -220px;
   width: 200px;
-  padding: 10px;
+  padding: 7px;
   background: rgba(100, 100, 100, 0.6);
   z-index: 1000;
 }
@@ -30,7 +30,9 @@ body {
   color: var(--secondary-color);
   margin-bottom: 10px;
   border-bottom: 1px solid #130f40;
-  padding: 5px 0;
+  /* padding: 5px 0; */
+  padding-top: 7px;
+  padding-bottom: 4px;
   text-align: center;
 }
 
@@ -38,7 +40,7 @@ body {
   position: absolute;
   top: 0;
   left: -66px;
-  background: rgba(100, 100, 100, 0.0);
+  background: rgba(100, 100, 100, 0);
   color: var(--secondary-color);
   padding: 10px 20px;
   cursor: pointer;
