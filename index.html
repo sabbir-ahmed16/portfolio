@@ -591,12 +591,6 @@
         an automatic speech recognition (ASR) system as a preprocessor.</p>
     </div>
 
-    <!-- <button class="accordion">Section 2</button>
-    <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-    </div> -->
     <!-------------------------------Publication Section End--------------------------->
 
     <!-------------------------------Footer Section------------------------------------>
@@ -610,7 +604,7 @@
           <a href="https://www.github.com/sabbir-ahmed16"><i class="fab fa-github"></i></a>
           <a href="https://www.researchgate.net/profile/Sabbir_Ahmed49"><i class="fab fa-researchgate"></i></a>
         </div>
-        <p>&copy; Copyright Sabbir Ahmed 2021</p>
+        <p id="copyright-msg"></p>
       </div>
     </div>
     <!-------------------------------Footer Section------------------------------------>
@@ -678,6 +672,8 @@
         document.querySelector(':root').style.setProperty('--main-color', dataColor);
     });
   });
+  const year = new Date().getFullYear();
+  document.getElementById("copyright-msg").innerHTML = `Copyright &copy; ${year}, Sabbir Ahmed.`
     </script>
 </body>
 
