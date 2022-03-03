@@ -492,6 +492,10 @@ body {
 .accordion:hover {
   box-shadow: 15px 2px 15px 0.5px gray;
 }
+.accordion a {
+  text-decoration: none;
+  color: var(--main-color);
+}
 
 .accordion:after {
   content: "\002B";
